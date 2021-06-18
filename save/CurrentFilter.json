@@ -1,0 +1,172 @@
+﻿{ "GroupType": "Count", "StashTab": 11, "Description": "Jewelry", "TypeValue": 2, "~ElementList": [
+	{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+		{ "#Key": "ItemClass", "Eval": "~", "Min": "Amulets", "Type": "Prop", "Weight": 1 }
+	]},
+	{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+		{ "GroupType": "And", "TypeValue": 1, "Weight": 1, "~ElementList": [
+			{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+				{ "#Key": "# to maximum Life", "Eval": ">=", "Min": 70, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Energy Shield", "Eval": ">=", "Min": 44, "Type": "Affix", "Weight": 1 }
+			]},
+			{ "GroupType": "Count", "TypeValue": 2, "Weight": 1, "~ElementList": [
+				{ "#Key": "Veiled", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "of the Veil", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Fire Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Lightning Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Cold Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Chaos Resistance", "Eval": ">=", "Min": 26, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Strength", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Dexterity", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Intelligence", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Accuracy Rating", "Eval": ">=", "Min": 251, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Elemental Damage with Attack Skills", "Eval": ">=", "Min": 31, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Fire Damage to Attacks", "Eval": ">=", "Min": 29, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Cold Damage to Attacks", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Lightning Damage to Attacks", "Eval": ">=", "Min": 35, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Physical Damage to Attacks", "Eval": ">=", "Min": 14, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to all Elemental Resistances", "Eval": ">=", "Min": 15, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to all Attributes", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Global Critical Strike Chance", "Eval": ">=", "Min": 30, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Global Critical Strike Multiplier", "Eval": ">=", "Min": 30, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased maximum Energy Shield", "Eval": ">=", "Min": 20, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Evasion Rating", "Eval": ">=", "Min": 20, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Armour", "Eval": ">=", "Min": 20, "Type": "Affix", "Weight": 1 }
+			]}
+		]},
+		{ "GroupType": "And", "TypeValue": 1, "Weight": 1, "~ElementList": [
+			{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+				{ "#Key": "# to maximum Life", "Eval": ">=", "Min": 60, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Energy Shield", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 }
+			]},
+			{ "GroupType": "Count", "TypeValue": 3, "Weight": 1, "~ElementList": [
+				{ "#Key": "Veiled", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "of the Veil", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Fire Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Lightning Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Cold Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Chaos Resistance", "Eval": ">=", "Min": 21, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Strength", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Dexterity", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Intelligence", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Accuracy Rating", "Eval": ">=", "Min": 166, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Elemental Damage with Attack Skills", "Eval": ">=", "Min": 21, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Fire Damage to Attacks", "Eval": ">=", "Min": 24, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Cold Damage to Attacks", "Eval": ">=", "Min": 21, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Lightning Damage to Attacks", "Eval": ">=", "Min": 30, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "Adds # to # Physical Damage to Attacks", "Eval": ">=", "Min": 11, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to all Elemental Resistances", "Eval": ">=", "Min": 12, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to all Attributes", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Global Critical Strike Chance", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Global Critical Strike Multiplier", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased maximum Energy Shield", "Eval": ">=", "Min": 17, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Evasion Rating", "Eval": ">=", "Min": 17, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Armour", "Eval": ">=", "Min": 17, "Type": "Affix", "Weight": 1 }
+			]}
+		]},
+		{ "GroupType": "And", "TypeValue": 1, "Weight": 1, "~ElementList": [
+			{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+				{ "#Key": "# to maximum Life", "Eval": ">=", "Min": 70, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Energy Shield", "Eval": ">=", "Min": 44, "Type": "Affix", "Weight": 1 }
+			]},
+			{ "GroupType": "Count", "TypeValue": 2, "Weight": 1, "~ElementList": [
+				{ "#Key": "Veiled", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "of the Veil", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Fire Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Lightning Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Cold Resistance", "Eval": ">=", "Min": 42, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Chaos Resistance", "Eval": ">=", "Min": 26, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to all Elemental Resistances", "Eval": ">=", "Min": 15, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Strength", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Dexterity", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Intelligence", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to all Attributes", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Cast Speed", "Eval": ">=", "Min": 8, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Mana", "Eval": ">=", "Min": 65, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Mana Regeneration Rate", "Eval": ">=", "Min": 50, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Spell Damage", "Eval": ">=", "Min": 18, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Fire Damage", "Eval": ">=", "Min": 18, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Cold Damage", "Eval": ">=", "Min": 18, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Lightning Damage", "Eval": ">=", "Min": 18, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Global Critical Strike Chance", "Eval": ">=", "Min": 30, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Global Critical Strike Multiplier", "Eval": ">=", "Min": 30, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased maximum Energy Shield", "Eval": ">=", "Min": 17, "Type": "Affix", "Weight": 1 }
+			]}
+		]},
+		{ "GroupType": "And", "TypeValue": 1, "Weight": 1, "~ElementList": [
+			{ "GroupType": "Count", "TypeValue": 1, "Weight": 1, "~ElementList": [
+				{ "#Key": "# to maximum Life", "Eval": ">=", "Min": 60, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Energy Shield", "Eval": ">=", "Min": 38, "Type": "Affix", "Weight": 1 }
+			]},
+			{ "GroupType": "Count", "TypeValue": 3, "Weight": 1, "~ElementList": [
+				{ "#Key": "Veiled", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "of the Veil", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Fire Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Lightning Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Cold Resistance", "Eval": ">=", "Min": 36, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Chaos Resistance", "Eval": ">=", "Min": 21, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Strength", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Dexterity", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to Intelligence", "Eval": ">=", "Min": 33, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to all Elemental Resistances", "Eval": ">=", "Min": 12, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to all Attributes", "Eval": ">=", "Min": 21, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Cast Speed", "Eval": ">=", "Min": 8, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "# to maximum Mana", "Eval": ">=", "Min": 60, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Mana Regeneration Rate", "Eval": ">=", "Min": 40, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Spell Damage", "Eval": ">=", "Min": 13, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Fire Damage", "Eval": ">=", "Min": 13, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Cold Damage", "Eval": ">=", "Min": 13, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Lightning Damage", "Eval": ">=", "Min": 13, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased Global Critical Strike Chance", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% to Global Critical Strike Multiplier", "Eval": ">=", "Min": 25, "Type": "Affix", "Weight": 1 },
+				{ "#Key": "#% increased maximum Energy Shield", "Eval": ">=", "Min": 14, "Type": "Affix", "Weight": 1 }
+			]}
+		]},
+		{ "GroupType": "Count", "TypeValue": 4, "Weight": 1, "~ElementList": [
+			{ "#Key": "Veiled", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Veil", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Athlete's", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Virile", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Rotund", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Tzteosh", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Magma", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Ephij", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Lightning", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Haast", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Ice", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Bameth", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Exile", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Godslayer", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Gods", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Titan", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Blur", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Wind", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Phantom", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Polymath", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Genius", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Virtuoso", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Ranger", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Marksman", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Devastating", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Overpowering", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Unleashed", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Cremating", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Entombing", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Electrocuting", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Flaring", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Tempered", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Span", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Rainbow", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Multiverse", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of the Infinite", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Incision", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Penetrating", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Destruction", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "of Ferocity", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Unassailable", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Impregnable", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Vaporous", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Dazzling", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 },
+			{ "#Key": "Resplendent", "Eval": ">=", "Min": 1, "Type": "Affix", "Weight": 1 }
+		]}
+	]}
+]}

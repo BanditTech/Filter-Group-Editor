@@ -1,0 +1,17 @@
+﻿{ "GroupName": "DescriptiveName", "GroupType": "And", "StashTab": 11, "~ElementList": [
+	{ "#Key": "ItemClass",   "Eval": "~",   "Min": "PluralClassNames",   "Type": "Prop" },
+	{ "#Key": "SpecialType",   "Eval": "~=",   "Min": "\\w",   "Type": "Prop" },
+	{ "GroupType": "Count", "TypeValue": 2, "~ElementList": [
+		{ "#Key": "Prefix1",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 1 },
+		{ "#Key": "Prefix2",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 1 },
+		{ "#Key": "Suffix",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 2 }
+	]},
+	{ "GroupType": "Weight", "TypeValue": 300, "~ElementList": [
+		{ "#Key": "Prefix1",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 12 },
+		{ "#Key": "Prefix2",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 12 },
+		{ "#Key": "Suffix",   "Eval": ">=",   "Min": 1,   "Type": "Affix",   "Weight": 15 }
+	]},
+	{ "GroupType": "Not", "~ElementList": [
+		{ "#Key": "Veiled",   "Eval": ">=",   "Min": 1,   "Type": "Prop" }
+	]}
+]}
