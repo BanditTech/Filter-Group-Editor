@@ -4,3 +4,4 @@
 #Include CLASS_ScrollGUI.ahk
 #Include Common.ahk
 #Include Toolbar.ahk
+#Include Labels.ahk

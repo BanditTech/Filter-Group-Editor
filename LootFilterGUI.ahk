@@ -24,19 +24,7 @@ ScrollArea.Show("Loaded Filter", "ycenter xcenter")
 
 ; MsgBox % SaveJSON(SomethingLoaded,Brain.TestFilter)
 
+; End Of Auto Execute
 return
-ScrollAreaSize:
-	ScrollArea.AdjustToChild()
-Return
-
-EDITEscape:
-EDITClose:
-	; Tooltip, fired
-	Gui, Editor: Hide
-	Gui, % ScrollArea.HWND ": -Disabled"
-	Gui, CLFgui: -Disabled
-	Winset, Top, ,% "ahk_id " ScrollArea.HWND
-	WinActivate, %  "ahk_id " ScrollArea.HWND
-Return
 
 #Include %A_ScriptDIR%\lib\Library.ahk
