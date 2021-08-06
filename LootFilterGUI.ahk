@@ -23,24 +23,24 @@ If Brain.SaveTestObj
 Brain.Memory := LoadJSON( Brain.CurrentFilter )
 
 ; This object is the Filter.Group Class for the loaded JSON
-Global SomethingLoaded := New Filter.Group(Brain.Memory)
+Brain.SomethingLoaded := New Filter.Group(Brain.Memory)
 
 ; Now we build the GUI area for the group
-Global CLFgui := New Filter.Gui(SomethingLoaded)
+Brain.GUI := New Filter.Gui(Brain.SomethingLoaded)
 
 ; From the GUI HWND we create a resizable scrolling zone
-Global ScrollArea := New ScrollGUI(CLFgui.HWND, 600, 600, "+Resize +LabelScrollArea", 3, 4)
-ScrollArea.Show("Loaded Filter", "ycenter xcenter")
+Brain.ScrollArea := New ScrollGUI(Brain.GUI.HWND, 600, 600, "+Resize +LabelScrollArea", 3, 4)
+Brain.ScrollArea.Show("Loaded Filter", "ycenter xcenter")
 
 ; Print out the original Object, and the new object
 If Brain.FinalObjMsg {
 	MsgBox % PrintoutKeys(Brain.Memory)
-	MsgBox % PrintoutKeys(SomethingLoaded)
+	MsgBox % PrintoutKeys(Brain.SomethingLoaded)
 }
 
 ; Save the object as a new file for viewing
 If Brain.SaveTestObj
-	MsgBox % SaveJSON(SomethingLoaded,Brain.TestFilter)
+	MsgBox % SaveJSON(Brain.SomethingLoaded,Brain.TestFilter)
 
 ; End Of Auto Execute
 return

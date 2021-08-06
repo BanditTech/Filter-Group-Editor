@@ -69,24 +69,22 @@
 			}
 		}
 		Retreive(d){
-			global SomethingLoaded
 			d := LTrim(d,"KEYDEPTH")
 			d := StrSplit(d, "_")
-			val := SomethingLoaded
+			val := Brain.SomethingLoaded
 			For k, v in d {
 				val := val["~ElementList"][v]
 			}
 			return val
 		}
 		ParentType(d){
-			global SomethingLoaded
 			d := LTrim(d,"KEYDEPTH")
 			If (d = "")
 				Return "TopLevel"
 			d := RTrim(d,"1234567890")
 			d := RTrim(d,"_")
 			d := StrSplit(d, "_")
-			val := SomethingLoaded
+			val := Brain.SomethingLoaded
 			For k, v in d {
 				val := val["~ElementList"][v]
 			}
@@ -264,37 +262,31 @@
 }
 
 OnToolbar(hWnd, Event, Text, Pos, Id) {
-    If (Event != "Click") {
-        Return
-    }
+	If (Event != "Click") {
+		Return
+	}
 
-    If (Text == "Import") {
-			MsgBox % "Import" IsObject(Filter.Editor.obj)
-    } Else If (Text == "Export") {
-			MsgBox % "Export"
-
-    } Else If (Text == "&Save") {
-			MsgBox % "Save"
-
-    } Else If (Text == "Reset") {
-			MsgBox % "Reset"
-
-    } Else If (Text == "Move Up") {
-			MsgBox % "Move Up"
-
-    } Else If (Text == "Move Down") {
-			MsgBox % "Move Down"
-
-    } Else If (Text == "Remove") {
-			MsgBox % "Remove"
-
-    }
+	If (Text == "Import") {
+		MsgBox % "Import" IsObject(Brain.Editor.obj)
+	} Else If (Text == "Export") {
+		MsgBox % "Export"
+	} Else If (Text == "&Save") {
+		MsgBox % "Save"
+	} Else If (Text == "Reset") {
+		MsgBox % "Reset"
+	} Else If (Text == "Move Up") {
+		MsgBox % "Move Up"
+	} Else If (Text == "Move Down") {
+		MsgBox % "Move Down"
+	} Else If (Text == "Remove") {
+		MsgBox % "Remove"
+	}
 }
 
 InteractMe(){
-
-	Editor := New Filter.Editor(A_GuiControl)
+	; Assign this object globally for reference to the edited object
+	Brain.Editor := New Filter.Editor(A_GuiControl)
 	Winset, Top, ,% "ahk_id " Editor.HWND
-	Gui,% ScrollArea.HWND ": +Disabled"
+	Gui,% Brain.ScrollArea.HWND ": +Disabled"
 	Gui, CLFgui : +Disabled
 }
