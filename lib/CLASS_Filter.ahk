@@ -68,7 +68,6 @@
 				This.Add("Text", "xp yp wp hp gInteractMe BackgroundTrans vKEYDEPTH" listkey )
 			}
 		}
-		
 		Retreive(d){
 			global SomethingLoaded
 			d := LTrim(d,"KEYDEPTH")
