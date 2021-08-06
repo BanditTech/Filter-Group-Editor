@@ -36,24 +36,35 @@
 			if (obj.GroupType) {
 				If Brain.BuildVerbose
 					MsgBox % "obj.grouptype " obj.GroupType " x " x " depth " depth " listkey " listkey
+				; Draw the box which will contain all sub-elements
 				This.Add("GroupBox", "x" x + (depth*10) 
 					. (listkey? " yp+" Filter.heightgrp - 2 : "ym")
 					. " w" InitialWidth - (depth*15) 
 					. " h" Filter.Group.GroupHeight(obj)
-					, obj.GroupType  (obj.TypeValue? " = " obj.TypeValue :""))
+					; Here we have the text field with information about the group
+					; First we add the type of group, and its Type Value (Count or Weight)
+					, obj.GroupType  (obj.TypeValue && obj.GroupType ~= "Count|Weight" ? " = " obj.TypeValue " ":" ") 
+						; Now we add additional information
+						. (obj.Description?"""" obj.Description """ " :"")
+						. (obj.StashTab? "Stash in: " obj.StashTab " ":""))
+				; Add interactive button for this group element
 				This.Add("Text", "xp yp wp h" Filter.heightgrp " gInteractMe BackgroundTrans vKEYDEPTH" listkey )
 				If Brain.BuildVerbose
 					MsgBox % "KEYDEPTH" listkey
+				; Build all sub-elements within the list (recursively)
 				For k, v in obj["~ElementList"] {
 					This.Build(v,x,depth+1,listkey != "" ? listkey "_" k : k)
 				}
-				This.Add("Button", "xp yp+3 w1 h1" ) ; Spacing button for alignment
+				; Spacing button for alignment
+				This.Add("Button", "xp yp+3 w1 h1" ) 
 			} Else If (obj["#Key"]) {
+				; Create the key entry text
 				This.Add("Text", "x" x + (depth*10) " yp+" Filter.heightele " w" InitialWidth - (depth*15)
-				, (obj["Weight"] != "" ? "Weight:" obj["Weight"] "`t" : "") 
+				, (obj["Weight"] != "" ? "Weight:" obj["Weight"] " `t" : "") 
 				. obj["Type"] ":`t" obj["#Key"] " " obj["Eval"] " " obj["Min"] )
 				If Brain.BuildVerbose
 					MsgBox % "KEYDEPTH" listkey
+				; Add interactive button for this element
 				This.Add("Text", "xp yp wp hp gInteractMe BackgroundTrans vKEYDEPTH" listkey )
 			}
 		}
@@ -92,7 +103,10 @@
 			This.ParentType := Filter.Gui.ParentType(ctrl)
 			This.ctrl := ctrl
 	    Gui, Font, Bold s12 cBlack, Segoe UI
+			; Create a reference to the current working object
 			This.obj := Filter.Gui.Retreive(ctrl)
+			; Create a backup of the original object settings
+			This.old := This.obj.Clone()
 			If Brain.ClickVerbose {
 				ToolTip % "Parent Type is " This.ParentType
 				MsgBox % PrintoutKeys(This.obj)
