@@ -269,18 +269,24 @@ OnToolbar(hWnd, Event, Text, Pos, Id) {
     }
 
     If (Text == "Import") {
-
+			MsgBox % "Import" IsObject(Filter.Editor.obj)
     } Else If (Text == "Export") {
+			MsgBox % "Export"
 
     } Else If (Text == "&Save") {
+			MsgBox % "Save"
 
     } Else If (Text == "Reset") {
+			MsgBox % "Reset"
 
     } Else If (Text == "Move Up") {
+			MsgBox % "Move Up"
 
     } Else If (Text == "Move Down") {
+			MsgBox % "Move Down"
 
     } Else If (Text == "Remove") {
+			MsgBox % "Remove"
 
     }
 }
