@@ -259,6 +259,43 @@
 			Return This
 		}
 	}
+	LoadFilter(){
+		; Debug line to save output as seperate file
+		If Brain.SaveTestObj
+			Brain.TestFilter := A_ScriptDir "\save\TestFilter.json" 
+
+		; Now we load into Memory the json object
+		Brain.Memory := LoadJSON( Brain.CurrentFilter )
+
+		; Insert Code here to select the group from a list
+
+		; Then add code to wait for selection
+
+		; Now assign the selected group to a Brain.Variable
+
+		; Adjust the line below to load from that instead.
+
+
+		; This object is the Filter.Group Class for the loaded JSON
+		Brain.SomethingLoaded := New This.Group(Brain.Memory)
+
+		; Now we build the GUI area for the group
+		Brain.GUI := New This.Gui(Brain.SomethingLoaded)
+
+		; From the GUI HWND we create a resizable scrolling zone
+		Brain.ScrollArea := New ScrollGUI(Brain.GUI.HWND, 600, 600, "+Resize +LabelScrollArea", 3, 4)
+		Brain.ScrollArea.Show("Loaded Filter", "ycenter xcenter")
+
+		; Print out the original Object, and the new object
+		If Brain.FinalObjMsg {
+			MsgBox % PrintoutKeys(Brain.Memory)
+			MsgBox % PrintoutKeys(Brain.SomethingLoaded)
+		}
+
+		; Save the object as a new file for viewing
+		If Brain.SaveTestObj
+			MsgBox % SaveJSON(Brain.SomethingLoaded,Brain.TestFilter)
+	}
 }
 
 OnToolbar(hWnd, Event, Text, Pos, Id) {

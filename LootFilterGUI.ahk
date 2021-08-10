@@ -15,32 +15,15 @@ Brain.CurrentFilter := A_ScriptDir "\save\CurrentFilter.json"
 	Brain.FinalObjMsg := False
 	Brain.SaveTestObj := False
 
-; Debug line to save output as seperate file
-If Brain.SaveTestObj
-	Brain.TestFilter := A_ScriptDir "\save\TestFilter.json" 
-
-; Now we load into Memory the json object
-Brain.Memory := LoadJSON( Brain.CurrentFilter )
-
-; This object is the Filter.Group Class for the loaded JSON
-Brain.SomethingLoaded := New Filter.Group(Brain.Memory)
-
-; Now we build the GUI area for the group
-Brain.GUI := New Filter.Gui(Brain.SomethingLoaded)
-
-; From the GUI HWND we create a resizable scrolling zone
-Brain.ScrollArea := New ScrollGUI(Brain.GUI.HWND, 600, 600, "+Resize +LabelScrollArea", 3, 4)
-Brain.ScrollArea.Show("Loaded Filter", "ycenter xcenter")
-
-; Print out the original Object, and the new object
-If Brain.FinalObjMsg {
-	MsgBox % PrintoutKeys(Brain.Memory)
-	MsgBox % PrintoutKeys(Brain.SomethingLoaded)
+; Add code to drop filter files onto script
+If (A_Args[1]) {
+	MsgBox % A_Args[1]
+	If (FileExist(A_Args[1]) && A_Args[1] ~= ".json$") {
+		Brain.CurrentFilter := A_Args[1]
+	}
 }
 
-; Save the object as a new file for viewing
-If Brain.SaveTestObj
-	MsgBox % SaveJSON(Brain.SomethingLoaded,Brain.TestFilter)
+Filter.LoadFilter()
 
 ; End Of Auto Execute
 return
