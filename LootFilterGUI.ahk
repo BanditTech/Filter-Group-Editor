@@ -29,3 +29,7 @@ Filter.LoadFilter()
 return
 
 #Include %A_ScriptDIR%\lib\Library.ahk
+
+ScrollAreaDropFiles:
+	MsgBox % A_GuiEvent
+Return
